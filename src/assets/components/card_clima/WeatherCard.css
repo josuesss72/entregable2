@@ -1,0 +1,176 @@
+
+
+.header_weather {
+    position: relative;
+}
+.header_weather h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #142F43;
+}
+
+.icon_cloud {
+    font-size: 45px;
+    transform: rotateZ(-9deg);
+    color: #DDDDDD;
+    background-color: #3F3F44;
+    border-radius: 50%;
+    padding: 0.2rem;
+} 
+
+.header_weather h3 {
+    font-weight: 400 bold;
+}
+
+.WeatherCard {
+    background-color: #3C8DAD;
+    box-shadow: 3px 4px  5px 3px rgba(131, 161, 204, 0.371);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.WeatherCard .infoWeather {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+
+.section_icon {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.section_icon h4 {
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.section_icon h4 b {
+    font-weight: 400 bold;
+    color: #DDDDDD;
+}
+.section_clouds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+}
+.section_clouds ul {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.section_clouds ul li b {
+    font-size: 15px;
+    font-weight: 400;
+}
+.section_clouds ul li {
+    font-size: 14px;
+    color: #142F43;
+    font-weight: 600;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+.section_clouds h2 {
+    font-size: 16px;
+    font-weight: 400 bold;
+    color: #142F43;
+}
+.incon_info {
+    font-size: 18px;
+    color: #DDDDDD;
+    background-color: #3F3F44;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.incon_temp {
+    font-size: 20px;
+    width: 23px;
+    height: 23px;
+    background-color: #3F3F44;
+    color: #DDDDDD;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    left: 2.5rem;
+
+}
+.btn_temp {
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(44, 43, 43, 0.3);
+    transition: background-color 0.4s , transform 0.4s;
+    margin-top: 0.5rem;
+    background-color: #3F3F44;
+    color: #DDDDDD;
+}
+.btn_temp:hover{
+
+    background-color: #145374;
+    transform: scale(0.96);
+    transition: background-color 0.3s , transform 0.4s;
+    
+}
+
+@media (max-width: 376px){
+    .infoWeather {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .infoWeather img {
+        height: 150px;;
+        width: 150px;
+    }
+}
+
+@media (max-width: 380px){
+   .section_clouds {
+        margin-right: 0.5rem;
+        
+   }
+   .section_clouds h2 {
+        text-align: start;
+        font-size: 16px;
+   }
+   .infoWeather img {
+        height: 150px;;
+        width: 150px;
+    }
+    .section_clouds ul li {
+        font-size: 13px;
+    }
+    .section_clouds ul li b {
+        font-size: 14px;
+    }
+    .incon_temp {
+        bottom: 1px;
+        left: 1rem;
+    
+    }
+}
